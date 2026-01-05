@@ -1,0 +1,24 @@
+# --- Terraform Temporary Files ---
+# תיקיית הקישור לספקים והמודולים (מופיעה אצלך בתמונה השנייה)
+.terraform/
+.terraform.lock.hcl
+
+# קבצי ה-State (מכילים את המצב הנוכחי של התשתית ואסור שיחשפו)
+*.tfstate
+*.tfstate.*
+
+# --- Secrets and Variables ---
+# קובץ הערכים מכיל סיסמאות (כמו ה-db_password שלך) - לא להעלות!
+terraform.tfvars
+terraform.tfvars.json
+*.tfvars
+*.tfvars.json
+
+# --- Docker ---
+# קבצים זמניים של דוקר (אם רלוונטי)
+.env
+.env.local
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
